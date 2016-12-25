@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0 (Jython 2.7.0 on java1.7.0_79)" generated="20161214 19:00:50.766">
+<suite source="C:\Users\sunilrr\Desktop\R2\Parser\OutputFiles\SOV_SUB2_v10.0\test105\test.robot.html" id="s1" name="Test.Robot">
+<kw type="setup" library="Sub2Resource" name="Initialize System">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Starting suite tearup ...</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:53.434" starttime="20161214 19:00:53.429"></status>
+</kw>
+<kw library="Remote" name="Sub Start Admin Connection">
+<doc>Connecting with the Sub2 system</doc>
+<status status="PASS" endtime="20161214 19:00:53.454" starttime="20161214 19:00:53.437"></status>
+</kw>
+<kw library="Remote" name="Sub Start Dealer Connection">
+<doc>Connecting with the Sub2 system</doc>
+<status status="PASS" endtime="20161214 19:00:53.466" starttime="20161214 19:00:53.456"></status>
+</kw>
+<kw library="Remote" name="Sub Init Admin">
+<doc>Initializing the system</doc>
+<status status="PASS" endtime="20161214 19:00:53.506" starttime="20161214 19:00:53.468"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:53.507" starttime="20161214 19:00:53.426"></status>
+</kw>
+<test id="s1-t1" name="Setting limits factor">
+<kw library="Remote" name="Sub Set Limits Factor">
+<doc>Setting multiplication factor for limits</doc>
+<arguments>
+<arg>0</arg>
+<arg>110</arg>
+<arg>110</arg>
+<arg>110</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:53.532" starttime="20161214 19:00:53.513"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:53.534" starttime="20161214 19:00:53.508"></status>
+</test>
+<test id="s1-t2" name="Limit Admin Logging">
+<kw library="Sub2Resource" name="Limit Admin Login">
+<arguments>
+<arg>kunalkumar</arg>
+<arg>lead@321</arg>
+</arguments>
+<kw library="Remote" name="Sub Admin Login">
+<doc>Logging into the Sub2 System</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>${UserPassword}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.318" starttime="20161214 19:00:53.549"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:54.319" starttime="20161214 19:00:53.546"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:54.321" starttime="20161214 19:00:53.537"></status>
+</test>
+<test id="s1-t3" name="Pre Token Limit Utilization">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>true</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.364" starttime="20161214 19:00:54.327"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:54.366" starttime="20161214 19:00:54.324"></status>
+</test>
+<test id="s1-t4" name="Uploading Default Token Limits">
+<kw library="Sub2Resource" name="Default Token Limits">
+<arguments>
+<arg>Instance ID</arg>
+<arg>Price Range</arg>
+<arg>Gross Exposure</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.379" starttime="20161214 19:00:54.376"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:54.380" starttime="20161214 19:00:54.372"></status>
+</kw>
+<kw library="Remote" name="Upload Default Token Limits">
+<doc>Upload Deafault Limit on All tokens</doc>
+<arguments>
+<arg>1</arg>
+<arg>10000</arg>
+<arg>500000000</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.591" starttime="20161214 19:00:54.382"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:54.593" starttime="20161214 19:00:54.369"></status>
+</test>
+<test id="s1-t5" name="Uploading Token Limits">
+<kw library="Sub2Resource" name="Token Limits">
+<arguments>
+<arg>Instance ID</arg>
+<arg>Token</arg>
+<arg>Price Range</arg>
+<arg>Gross Exposure</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.605" starttime="20161214 19:00:54.602"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:54.606" starttime="20161214 19:00:54.598"></status>
+</kw>
+<kw library="Remote" name="Update Token Limits">
+<doc>Uploading the token limits</doc>
+<arguments>
+<arg>1</arg>
+<arg>11868</arg>
+<arg>10000</arg>
+<arg>36080</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.621" starttime="20161214 19:00:54.608"></status>
+</kw>
+<kw library="Remote" name="Update Token Limits">
+<doc>Uploading the token limits</doc>
+<arguments>
+<arg>1</arg>
+<arg>14803</arg>
+<arg>10000</arg>
+<arg>21080</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.635" starttime="20161214 19:00:54.623"></status>
+</kw>
+<kw library="Remote" name="Update Token Limits">
+<doc>Uploading the token limits</doc>
+<arguments>
+<arg>1</arg>
+<arg>1363</arg>
+<arg>10000</arg>
+<arg>16210</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.653" starttime="20161214 19:00:54.637"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:54.656" starttime="20161214 19:00:54.595"></status>
+</test>
+<test id="s1-t6" name="Pre Instance Limit Utilization">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>true</arg>
+</arguments>
+<msg timestamp="20161214 19:00:54.689" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :722240
+Pov is :0
+Throttle is :0
+Turnover is :881960</msg>
+<status status="PASS" endtime="20161214 19:00:54.690" starttime="20161214 19:00:54.666"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:54.692" starttime="20161214 19:00:54.660"></status>
+</test>
+<test id="s1-t7" name="Uploading Instance Limits">
+<kw library="Sub2Resource" name="Instance Limits">
+<arguments>
+<arg>Instance ID</arg>
+<arg>COOV</arg>
+<arg>Turnover</arg>
+<arg>AEC</arg>
+<arg>Net Position</arg>
+<arg>MTM</arg>
+<arg>Throttle</arg>
+<arg>SOV</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Uploading instance limits</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.710" starttime="20161214 19:00:54.706"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:54.711" starttime="20161214 19:00:54.699"></status>
+</kw>
+<kw library="Remote" name="Update Instance Limits">
+<doc>Uploading the instance limits</doc>
+<arguments>
+<arg>1</arg>
+<arg>55012</arg>
+<arg>141790</arg>
+<arg>10000</arg>
+<arg>37217</arg>
+<arg>999999999</arg>
+<arg>1000</arg>
+<arg>16100</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.736" starttime="20161214 19:00:54.715"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:54.739" starttime="20161214 19:00:54.695"></status>
+</test>
+<test id="s1-t8" name="Start counter order server">
+<kw library="CounterOrderResource" name="start connector1">
+<kw library="r2Clients.R2Client" name="Set Order Server">
+<arguments>
+<arg>InHouse</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:54.888" starttime="20161214 19:00:54.753"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:54.891" starttime="20161214 19:00:54.750"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:54.894" starttime="20161214 19:00:54.743"></status>
+</test>
+<test id="s1-t9" name="Logging of counter order dealer">
+<kw library="CounterOrderResource" name="counterOrderDealer Login">
+<arguments>
+<arg>DEALER3</arg>
+<arg>edel@369</arg>
+</arguments>
+<kw library="r2Clients.R2Client" name="OrderDealer Login">
+<arguments>
+<arg>${UserName}</arg>
+<arg>${Password}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:57.930" starttime="20161214 19:00:54.914"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:57.931" starttime="20161214 19:00:54.909"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:57.933" starttime="20161214 19:00:54.902"></status>
+</test>
+<test id="s1-t10" name="Start Counter Orders">
+<kw library="CounterOrderResource" name="Counter Orders">
+<arguments>
+<arg>OrderID</arg>
+<arg>Security</arg>
+<arg>Account</arg>
+<arg>Side</arg>
+<arg>Quantity</arg>
+<arg>Price</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Placing Counter Orders</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:57.945" starttime="20161214 19:00:57.942"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:57.946" starttime="20161214 19:00:57.938"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:57.947" starttime="20161214 19:00:57.935"></status>
+</test>
+<test id="s1-t11" name="Sending counter order: 1">
+<kw library="CounterOrderResource" name="send counter order">
+<arguments>
+<arg>5733</arg>
+<arg>HDIL-EQ::NSE_CM</arg>
+<arg>CLIENT1</arg>
+<arg>SELL</arg>
+<arg>1</arg>
+<arg>70.1</arg>
+</arguments>
+<kw library="r2Clients.R2Client" name="Send Order">
+<arguments>
+<arg>${Security}</arg>
+<arg>${Account}</arg>
+<arg>NEW</arg>
+<arg>${Side}</arg>
+<arg>LIMIT</arg>
+<arg>DAY</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+<arg>${LimitPx}</arg>
+<arg>${OrderID}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:00:58.049" starttime="20161214 19:00:57.957"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:00:58.051" starttime="20161214 19:00:57.953"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:00:58.052" starttime="20161214 19:00:57.950"></status>
+</test>
+<test id="s1-t12" name="Check Acknowledgement : 1">
+<kw library="CounterOrderResource" name="acknowledgement for counter order 5733 should be NEW">
+<kw library="r2Clients.R2Client" name="Check Status For OrderID">
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:01:08.116" level="FAIL">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5733 Waited for 1 minute</msg>
+<status status="FAIL" endtime="20161214 19:01:08.118" starttime="20161214 19:00:58.062"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:01:08.120" starttime="20161214 19:00:58.059"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:01:08.122" starttime="20161214 19:00:58.055">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5733 Waited for 1 minute</status>
+</test>
+<test id="s1-t13" name="Sending counter order: 2">
+<kw library="CounterOrderResource" name="send counter order">
+<arguments>
+<arg>5734</arg>
+<arg>HDIL-EQ::NSE_CM</arg>
+<arg>CLIENT1</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>70.3</arg>
+</arguments>
+<kw library="r2Clients.R2Client" name="Send Order">
+<arguments>
+<arg>${Security}</arg>
+<arg>${Account}</arg>
+<arg>NEW</arg>
+<arg>${Side}</arg>
+<arg>LIMIT</arg>
+<arg>DAY</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+<arg>${LimitPx}</arg>
+<arg>${OrderID}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:08.222" starttime="20161214 19:01:08.136"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:08.223" starttime="20161214 19:01:08.130"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:08.224" starttime="20161214 19:01:08.125"></status>
+</test>
+<test id="s1-t14" name="Check Acknowledgement : 2">
+<kw library="CounterOrderResource" name="acknowledgement for counter order 5734 should be NEW">
+<kw library="r2Clients.R2Client" name="Check Status For OrderID">
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:01:18.283" level="FAIL">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5734 Waited for 1 minute</msg>
+<status status="FAIL" endtime="20161214 19:01:18.285" starttime="20161214 19:01:08.232"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:01:18.288" starttime="20161214 19:01:08.230"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:01:18.292" starttime="20161214 19:01:08.227">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5734 Waited for 1 minute</status>
+</test>
+<test id="s1-t15" name="Sending counter order: 3">
+<kw library="CounterOrderResource" name="send counter order">
+<arguments>
+<arg>5735</arg>
+<arg>HDIL-EQ::NSE_CM</arg>
+<arg>CLIENT1</arg>
+<arg>BUY</arg>
+<arg>2</arg>
+<arg>69.7</arg>
+</arguments>
+<kw library="r2Clients.R2Client" name="Send Order">
+<arguments>
+<arg>${Security}</arg>
+<arg>${Account}</arg>
+<arg>NEW</arg>
+<arg>${Side}</arg>
+<arg>LIMIT</arg>
+<arg>DAY</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+<arg>${LimitPx}</arg>
+<arg>${OrderID}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:18.404" starttime="20161214 19:01:18.312"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:18.406" starttime="20161214 19:01:18.305"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:18.408" starttime="20161214 19:01:18.299"></status>
+</test>
+<test id="s1-t16" name="Check Acknowledgement : 3">
+<kw library="CounterOrderResource" name="acknowledgement for counter order 5735 should be NEW">
+<kw library="r2Clients.R2Client" name="Check Status For OrderID">
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:01:28.453" level="FAIL">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5735 Waited for 1 minute</msg>
+<status status="FAIL" endtime="20161214 19:01:28.454" starttime="20161214 19:01:18.418"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:01:28.456" starttime="20161214 19:01:18.415"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:01:28.458" starttime="20161214 19:01:18.411">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5735 Waited for 1 minute</status>
+</test>
+<test id="s1-t17" name="Sending counter order: 4">
+<kw library="CounterOrderResource" name="send counter order">
+<arguments>
+<arg>5736</arg>
+<arg>FINANTECH-EQ::NSE_CM</arg>
+<arg>CLIENT1</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>72.3</arg>
+</arguments>
+<kw library="r2Clients.R2Client" name="Send Order">
+<arguments>
+<arg>${Security}</arg>
+<arg>${Account}</arg>
+<arg>NEW</arg>
+<arg>${Side}</arg>
+<arg>LIMIT</arg>
+<arg>DAY</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+<arg>${LimitPx}</arg>
+<arg>${OrderID}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:28.593" starttime="20161214 19:01:28.469"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:28.595" starttime="20161214 19:01:28.464"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:28.597" starttime="20161214 19:01:28.461"></status>
+</test>
+<test id="s1-t18" name="Check Acknowledgement : 4">
+<kw library="CounterOrderResource" name="acknowledgement for counter order 5736 should be NEW">
+<kw library="r2Clients.R2Client" name="Check Status For OrderID">
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:01:38.641" level="FAIL">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5736 Waited for 1 minute</msg>
+<status status="FAIL" endtime="20161214 19:01:38.643" starttime="20161214 19:01:28.610"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:01:38.644" starttime="20161214 19:01:28.606"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:01:38.646" starttime="20161214 19:01:28.601">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5736 Waited for 1 minute</status>
+</test>
+<test id="s1-t19" name="Sending counter order: 5">
+<kw library="CounterOrderResource" name="send counter order">
+<arguments>
+<arg>5737</arg>
+<arg>FINANTECH-EQ::NSE_CM</arg>
+<arg>CLIENT1</arg>
+<arg>BUY</arg>
+<arg>1</arg>
+<arg>71.9</arg>
+</arguments>
+<kw library="r2Clients.R2Client" name="Send Order">
+<arguments>
+<arg>${Security}</arg>
+<arg>${Account}</arg>
+<arg>NEW</arg>
+<arg>${Side}</arg>
+<arg>LIMIT</arg>
+<arg>DAY</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+<arg>${LimitPx}</arg>
+<arg>${OrderID}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:38.742" starttime="20161214 19:01:38.656"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:38.743" starttime="20161214 19:01:38.652"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:38.744" starttime="20161214 19:01:38.649"></status>
+</test>
+<test id="s1-t20" name="Check Acknowledgement : 5">
+<kw library="CounterOrderResource" name="acknowledgement for counter order 5737 should be NEW">
+<kw library="r2Clients.R2Client" name="Check Status For OrderID">
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:01:48.781" level="FAIL">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5737 Waited for 1 minute</msg>
+<status status="FAIL" endtime="20161214 19:01:48.783" starttime="20161214 19:01:38.753"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:01:48.784" starttime="20161214 19:01:38.751"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:01:48.785" starttime="20161214 19:01:38.747">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5737 Waited for 1 minute</status>
+</test>
+<test id="s1-t21" name="Sending counter order: 6">
+<kw library="CounterOrderResource" name="send counter order">
+<arguments>
+<arg>5738</arg>
+<arg>FINANTECH-EQ::NSE_CM</arg>
+<arg>CLIENT1</arg>
+<arg>BUY</arg>
+<arg>2</arg>
+<arg>71.7</arg>
+</arguments>
+<kw library="r2Clients.R2Client" name="Send Order">
+<arguments>
+<arg>${Security}</arg>
+<arg>${Account}</arg>
+<arg>NEW</arg>
+<arg>${Side}</arg>
+<arg>LIMIT</arg>
+<arg>DAY</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+<arg>${LimitPx}</arg>
+<arg>${OrderID}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:48.885" starttime="20161214 19:01:48.799"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:48.886" starttime="20161214 19:01:48.795"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:48.888" starttime="20161214 19:01:48.792"></status>
+</test>
+<test id="s1-t22" name="Check Acknowledgement : 6">
+<kw library="CounterOrderResource" name="acknowledgement for counter order 5738 should be NEW">
+<kw library="r2Clients.R2Client" name="Check Status For OrderID">
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:01:58.923" level="FAIL">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5738 Waited for 1 minute</msg>
+<status status="FAIL" endtime="20161214 19:01:58.924" starttime="20161214 19:01:48.897"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:01:58.926" starttime="20161214 19:01:48.895"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:01:58.928" starttime="20161214 19:01:48.891">ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.AssertionError: Status NEW not received for 5738 Waited for 1 minute</status>
+</test>
+<test id="s1-t23" name="Init Order Dealer">
+<kw library="Sub2Resource" name="Init OrderDealer">
+<kw library="Remote" name="Sub Init Dealer">
+<doc>Initializing the dealer system</doc>
+<status status="PASS" endtime="20161214 19:01:59.007" starttime="20161214 19:01:58.942"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:59.008" starttime="20161214 19:01:58.939"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:59.010" starttime="20161214 19:01:58.935"></status>
+</test>
+<test id="s1-t24" name="Order Dealer Logging in">
+<kw library="Sub2Resource" name="OrderDealer Logging">
+<arguments>
+<arg>sunilrr</arg>
+<arg>dell@007</arg>
+</arguments>
+<kw library="Remote" name="Sub Dealer Login">
+<doc>Logging into the Sub2 System</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>${UserPassword}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:59.150" starttime="20161214 19:01:59.020"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:59.151" starttime="20161214 19:01:59.017"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:59.152" starttime="20161214 19:01:59.013"></status>
+</test>
+<test id="s1-t25" name="Upload Default Strategy">
+<kw library="Sub2Resource" name="Default Strategy">
+<arguments>
+<arg>Instance ID</arg>
+<arg>Max Pos Qty</arg>
+<arg>Standing Qty</arg>
+<arg>Max Rev Qty</arg>
+<arg>Micro Qty</arg>
+<arg>Min Change Price</arg>
+<arg>Min Micro Qty</arg>
+<arg>Spread</arg>
+<arg>Reserved1</arg>
+<arg>Reserved2</arg>
+<arg>Reserved3</arg>
+<arg>Reserved4</arg>
+<arg>Reserved5</arg>
+<arg>Reserved6</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:59.175" starttime="20161214 19:01:59.170"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:59.178" starttime="20161214 19:01:59.160"></status>
+</kw>
+<kw library="Remote" name="Upload Default Strategy">
+<doc>Upload Deafault Limit on All tokens</doc>
+<arguments>
+<arg>1</arg>
+<arg>6376</arg>
+<arg>1594</arg>
+<arg>3189</arg>
+<arg>3188</arg>
+<arg>2</arg>
+<arg>50</arg>
+<arg>15</arg>
+<arg>0</arg>
+<arg>0</arg>
+<arg>0</arg>
+<arg>0</arg>
+<arg>0</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:59.485" starttime="20161214 19:01:59.180"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:59.486" starttime="20161214 19:01:59.156"></status>
+</test>
+<test id="s1-t26" name="Placing Orders">
+<kw library="Sub2Resource" name="Order Type">
+<arguments>
+<arg>Instance ID</arg>
+<arg>Order ID</arg>
+<arg>Symbol</arg>
+<arg>Order Type</arg>
+<arg>Quantity</arg>
+<arg>Price</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:59.503" starttime="20161214 19:01:59.499"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:59.505" starttime="20161214 19:01:59.494"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:59.506" starttime="20161214 19:01:59.490"></status>
+</test>
+<test id="s1-t27" name="Placing Order: 1">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>101</arg>
+<arg>HDIL</arg>
+<arg>BUY</arg>
+<arg>2</arg>
+<arg>7010</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:59.610" starttime="20161214 19:01:59.524"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:59.611" starttime="20161214 19:01:59.517"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:01:59.613" starttime="20161214 19:01:59.510"></status>
+</test>
+<test id="s1-t28" name="Check Acknowledgement for order: 1">
+<kw library="Sub2Resource" name="acknowledgement for order 101 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:01:59.662" starttime="20161214 19:01:59.625"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:01:59.663" starttime="20161214 19:01:59.623"></status>
+</kw>
+<kw library="Sub2Resource" name="acknowledgement for order 101 should be PARTIALLY_FILLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:02:14.690" level="FAIL">Expected: PARTIALLY_FILLED , but found  null  </msg>
+<status status="FAIL" endtime="20161214 19:02:14.692" starttime="20161214 19:01:59.669"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:02:14.694" starttime="20161214 19:01:59.666"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:02:14.697" starttime="20161214 19:01:59.618">Expected: PARTIALLY_FILLED , but found  null  </status>
+</test>
+<test id="s1-t29" name="Pre Instance Limit Utilization 1">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:02:14.746" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :736260
+Pov is :14020
+Throttle is :0
+Turnover is :895980</msg>
+<status status="PASS" endtime="20161214 19:02:14.747" starttime="20161214 19:02:14.718"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:14.749" starttime="20161214 19:02:14.710"></status>
+</test>
+<test id="s1-t30" name="Pre Token Limit Utilization 1">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:14.783" starttime="20161214 19:02:14.755"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:14.784" starttime="20161214 19:02:14.752"></status>
+</test>
+<test id="s1-t31" name="Placing Order: 2">
+<kw library="Sub2Resource" name="cancel Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>101</arg>
+<arg>HDIL</arg>
+<arg>BUY</arg>
+<arg>2</arg>
+<arg>7010</arg>
+</arguments>
+<kw library="Remote" name="Sub Cancel Limit Day Order">
+<doc>Cancel Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:14.869" starttime="20161214 19:02:14.798"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:14.870" starttime="20161214 19:02:14.794"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:14.872" starttime="20161214 19:02:14.787"></status>
+</test>
+<test id="s1-t32" name="Check Acknowledgement for order: 2">
+<kw library="Sub2Resource" name="acknowledgement for order 101 should be CANCELLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:14.950" starttime="20161214 19:02:14.887"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:14.952" starttime="20161214 19:02:14.885"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:14.954" starttime="20161214 19:02:14.876"></status>
+</test>
+<test id="s1-t33" name="Pre Instance Limit Utilization 2">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:02:14.975" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :722240
+Pov is :0
+Throttle is :0
+Turnover is :881960</msg>
+<status status="PASS" endtime="20161214 19:02:14.976" starttime="20161214 19:02:14.961"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:14.978" starttime="20161214 19:02:14.957"></status>
+</test>
+<test id="s1-t34" name="Pre Token Limit Utilization 2">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:15.032" starttime="20161214 19:02:14.987"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:15.034" starttime="20161214 19:02:14.981"></status>
+</test>
+<test id="s1-t35" name="Placing Order: 3">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>102</arg>
+<arg>FINANTECH</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>7190</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:15.256" starttime="20161214 19:02:15.044"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:15.258" starttime="20161214 19:02:15.040"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:15.259" starttime="20161214 19:02:15.037"></status>
+</test>
+<test id="s1-t36" name="Check Acknowledgement for order: 3">
+<kw library="Sub2Resource" name="acknowledgement for order 102 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:15.324" starttime="20161214 19:02:15.268"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:15.325" starttime="20161214 19:02:15.266"></status>
+</kw>
+<kw library="Sub2Resource" name="acknowledgement for order 102 should be PARTIALLY_FILLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:02:30.348" level="FAIL">Expected: PARTIALLY_FILLED , but found  null  </msg>
+<status status="FAIL" endtime="20161214 19:02:30.350" starttime="20161214 19:02:15.329"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:02:30.352" starttime="20161214 19:02:15.327"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:02:30.354" starttime="20161214 19:02:15.263">Expected: PARTIALLY_FILLED , but found  null  </status>
+</test>
+<test id="s1-t37" name="Pre Instance Limit Utilization 3">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:02:30.374" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :736620
+Pov is :14380
+Throttle is :0
+Turnover is :896340</msg>
+<status status="PASS" endtime="20161214 19:02:30.375" starttime="20161214 19:02:30.360"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:30.377" starttime="20161214 19:02:30.357"></status>
+</test>
+<test id="s1-t38" name="Pre Token Limit Utilization 3">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:30.460" starttime="20161214 19:02:30.383"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:30.463" starttime="20161214 19:02:30.380"></status>
+</test>
+<test id="s1-t39" name="Placing Order: 4">
+<kw library="Sub2Resource" name="cancel Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>102</arg>
+<arg>FINANTECH</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>7190</arg>
+</arguments>
+<kw library="Remote" name="Sub Cancel Limit Day Order">
+<doc>Cancel Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:30.699" starttime="20161214 19:02:30.492"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:30.701" starttime="20161214 19:02:30.487"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:30.702" starttime="20161214 19:02:30.467"></status>
+</test>
+<test id="s1-t40" name="Check Acknowledgement for order: 4">
+<kw library="Sub2Resource" name="acknowledgement for order 102 should be CANCELLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:30.730" starttime="20161214 19:02:30.714"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:30.731" starttime="20161214 19:02:30.711"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:30.733" starttime="20161214 19:02:30.706"></status>
+</test>
+<test id="s1-t41" name="Pre Instance Limit Utilization 4">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:02:30.755" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :722240
+Pov is :0
+Throttle is :0
+Turnover is :881960</msg>
+<status status="PASS" endtime="20161214 19:02:30.756" starttime="20161214 19:02:30.740"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:30.757" starttime="20161214 19:02:30.736"></status>
+</test>
+<test id="s1-t42" name="Pre Token Limit Utilization 4">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:30.797" starttime="20161214 19:02:30.764"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:30.799" starttime="20161214 19:02:30.761"></status>
+</test>
+<test id="s1-t43" name="Placing Order: 5">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>103</arg>
+<arg>HDIL</arg>
+<arg>BUY</arg>
+<arg>2</arg>
+<arg>7030</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:30.882" starttime="20161214 19:02:30.815"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:30.883" starttime="20161214 19:02:30.809"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:30.886" starttime="20161214 19:02:30.804"></status>
+</test>
+<test id="s1-t44" name="Check Acknowledgement for order: 5">
+<kw library="Sub2Resource" name="acknowledgement for order 103 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:30.961" starttime="20161214 19:02:30.899"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:30.963" starttime="20161214 19:02:30.896"></status>
+</kw>
+<kw library="Sub2Resource" name="acknowledgement for order 103 should be FILLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:02:45.992" level="FAIL">Expected: FILLED , but found  null  </msg>
+<status status="FAIL" endtime="20161214 19:02:45.993" starttime="20161214 19:02:30.969"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:02:45.995" starttime="20161214 19:02:30.965"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:02:45.997" starttime="20161214 19:02:30.891">Expected: FILLED , but found  null  </status>
+</test>
+<test id="s1-t45" name="Pre Instance Limit Utilization 5">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:02:46.031" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :736300
+Pov is :14060
+Throttle is :0
+Turnover is :896020</msg>
+<status status="PASS" endtime="20161214 19:02:46.033" starttime="20161214 19:02:46.008"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:46.035" starttime="20161214 19:02:46.003"></status>
+</test>
+<test id="s1-t46" name="Pre Token Limit Utilization 5">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:46.069" starttime="20161214 19:02:46.042"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:46.071" starttime="20161214 19:02:46.039"></status>
+</test>
+<test id="s1-t47" name="Placing Order: 6">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>104</arg>
+<arg>HDIL</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>6970</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:46.320" starttime="20161214 19:02:46.083"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:46.321" starttime="20161214 19:02:46.077"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:02:46.324" starttime="20161214 19:02:46.074"></status>
+</test>
+<test id="s1-t48" name="Check Acknowledgement for order: 6">
+<kw library="Sub2Resource" name="acknowledgement for order 104 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:02:46.380" starttime="20161214 19:02:46.333"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:02:46.381" starttime="20161214 19:02:46.331"></status>
+</kw>
+<kw library="Sub2Resource" name="acknowledgement for order 104 should be FILLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:03:01.404" level="FAIL">Expected: FILLED , but found  null  </msg>
+<status status="FAIL" endtime="20161214 19:03:01.406" starttime="20161214 19:02:46.386"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:03:01.407" starttime="20161214 19:02:46.384"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:03:01.408" starttime="20161214 19:02:46.328">Expected: FILLED , but found  null  </status>
+</test>
+<test id="s1-t49" name="Pre Instance Limit Utilization 6">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:01.431" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :736180
+Pov is :13940
+Throttle is :0
+Turnover is :895900</msg>
+<status status="PASS" endtime="20161214 19:03:01.432" starttime="20161214 19:03:01.417"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:01.434" starttime="20161214 19:03:01.414"></status>
+</test>
+<test id="s1-t50" name="Pre Token Limit Utilization 6">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:01.467" starttime="20161214 19:03:01.440"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:01.470" starttime="20161214 19:03:01.437"></status>
+</test>
+<test id="s1-t51" name="Placing Order: 7">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>105</arg>
+<arg>FINANTECH</arg>
+<arg>BUY</arg>
+<arg>2</arg>
+<arg>7230</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:01.594" starttime="20161214 19:03:01.488"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:01.595" starttime="20161214 19:03:01.484"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:01.597" starttime="20161214 19:03:01.481"></status>
+</test>
+<test id="s1-t52" name="Check Acknowledgement for order: 7">
+<kw library="Sub2Resource" name="acknowledgement for order 105 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:01.673" starttime="20161214 19:03:01.614"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:01.674" starttime="20161214 19:03:01.610"></status>
+</kw>
+<kw library="Sub2Resource" name="acknowledgement for order 105 should be FILLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:03:16.704" level="FAIL">Expected: FILLED , but found  null  </msg>
+<status status="FAIL" endtime="20161214 19:03:16.706" starttime="20161214 19:03:01.680"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:03:16.707" starttime="20161214 19:03:01.677"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:03:16.709" starttime="20161214 19:03:01.605">Expected: FILLED , but found  null  </status>
+</test>
+<test id="s1-t53" name="Pre Instance Limit Utilization 7">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:16.740" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :750640
+Pov is :28400
+Throttle is :0
+Turnover is :910360</msg>
+<status status="PASS" endtime="20161214 19:03:16.742" starttime="20161214 19:03:16.720"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:16.744" starttime="20161214 19:03:16.716"></status>
+</test>
+<test id="s1-t54" name="Pre Token Limit Utilization 7">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:16.792" starttime="20161214 19:03:16.756"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:16.794" starttime="20161214 19:03:16.750"></status>
+</test>
+<test id="s1-t55" name="Placing Order: 8">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>106</arg>
+<arg>FINANTECH</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>7170</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:16.879" starttime="20161214 19:03:16.804"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:16.880" starttime="20161214 19:03:16.800"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:16.881" starttime="20161214 19:03:16.797"></status>
+</test>
+<test id="s1-t56" name="Check Acknowledgement for order: 8">
+<kw library="Sub2Resource" name="acknowledgement for order 106 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:16.950" starttime="20161214 19:03:16.889"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:16.951" starttime="20161214 19:03:16.888"></status>
+</kw>
+<kw library="Sub2Resource" name="acknowledgement for order 106 should be FILLED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:03:31.976" level="FAIL">Expected: FILLED , but found  null  </msg>
+<status status="FAIL" endtime="20161214 19:03:31.977" starttime="20161214 19:03:16.957"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:03:31.979" starttime="20161214 19:03:16.954"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:03:31.980" starttime="20161214 19:03:16.885">Expected: FILLED , but found  null  </status>
+</test>
+<test id="s1-t57" name="Pre Instance Limit Utilization 8">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:32.006" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :750520
+Pov is :28280
+Throttle is :0
+Turnover is :910240</msg>
+<status status="PASS" endtime="20161214 19:03:32.008" starttime="20161214 19:03:31.990"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:32.009" starttime="20161214 19:03:31.987"></status>
+</test>
+<test id="s1-t58" name="Pre Token Limit Utilization 8">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:32.048" starttime="20161214 19:03:32.019"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:32.050" starttime="20161214 19:03:32.014"></status>
+</test>
+<test id="s1-t59" name="Placing Order: 9">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>107</arg>
+<arg>FINANTECH</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>7210</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:32.110" starttime="20161214 19:03:32.066"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:32.111" starttime="20161214 19:03:32.059"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:32.113" starttime="20161214 19:03:32.055"></status>
+</test>
+<test id="s1-t60" name="Check Acknowledgement for order: 9">
+<kw library="Sub2Resource" name="acknowledgement for order 107 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<msg timestamp="20161214 19:03:47.142" level="FAIL">Expected: NEW , but found  NOT_SENT  </msg>
+<status status="FAIL" endtime="20161214 19:03:47.144" starttime="20161214 19:03:32.123"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:03:47.145" starttime="20161214 19:03:32.120"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:03:47.147" starttime="20161214 19:03:32.116">Expected: NEW , but found  NOT_SENT  </status>
+</test>
+<test id="s1-t61" name="Pre Instance Limit Utilization 9">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:47.173" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :750520
+Pov is :28280
+Throttle is :0
+Turnover is :910240</msg>
+<status status="PASS" endtime="20161214 19:03:47.174" starttime="20161214 19:03:47.155"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.175" starttime="20161214 19:03:47.150"></status>
+</test>
+<test id="s1-t62" name="Pre Token Limit Utilization 9">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.224" starttime="20161214 19:03:47.181"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.226" starttime="20161214 19:03:47.177"></status>
+</test>
+<test id="s1-t63" name="Placing Order: 10">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>108</arg>
+<arg>FINANTECH</arg>
+<arg>BUY</arg>
+<arg>2</arg>
+<arg>7190</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.323" starttime="20161214 19:03:47.238"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:47.324" starttime="20161214 19:03:47.232"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.326" starttime="20161214 19:03:47.228"></status>
+</test>
+<test id="s1-t64" name="Check Acknowledgement for order: 10">
+<kw library="Sub2Resource" name="acknowledgement for order 108 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.419" starttime="20161214 19:03:47.331"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:47.421" starttime="20161214 19:03:47.330"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.422" starttime="20161214 19:03:47.328"></status>
+</test>
+<test id="s1-t65" name="Pre Instance Limit Utilization 10">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:47.447" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :750560
+Pov is :28320
+Throttle is :1
+Turnover is :910280</msg>
+<status status="PASS" endtime="20161214 19:03:47.448" starttime="20161214 19:03:47.428"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.450" starttime="20161214 19:03:47.425"></status>
+</test>
+<test id="s1-t66" name="Pre Token Limit Utilization 10">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.538" starttime="20161214 19:03:47.458"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.540" starttime="20161214 19:03:47.454"></status>
+</test>
+<test id="s1-t67" name="Placing Order: 11">
+<kw library="Sub2Resource" name="send Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>109</arg>
+<arg>HINDALCO</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>7990</arg>
+</arguments>
+<kw library="Remote" name="Sub Send Limit Day Order">
+<doc>Send Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.615" starttime="20161214 19:03:47.549"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:47.617" starttime="20161214 19:03:47.546"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.618" starttime="20161214 19:03:47.543"></status>
+</test>
+<test id="s1-t68" name="Check Acknowledgement for order: 11">
+<kw library="Sub2Resource" name="acknowledgement for order 109 should be NEW">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.660" starttime="20161214 19:03:47.628"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:47.661" starttime="20161214 19:03:47.626"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.662" starttime="20161214 19:03:47.622"></status>
+</test>
+<test id="s1-t69" name="Pre Instance Limit Utilization 11">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:47.686" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :766540
+Pov is :44300
+Throttle is :2
+Turnover is :926260</msg>
+<status status="PASS" endtime="20161214 19:03:47.687" starttime="20161214 19:03:47.669"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.689" starttime="20161214 19:03:47.665"></status>
+</test>
+<test id="s1-t70" name="Pre Token Limit Utilization 11">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.720" starttime="20161214 19:03:47.696"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.721" starttime="20161214 19:03:47.693"></status>
+</test>
+<test id="s1-t71" name="Placing Order: 12">
+<kw library="Sub2Resource" name="modify Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>109</arg>
+<arg>HINDALCO</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>7985</arg>
+</arguments>
+<kw library="Remote" name="Sub Modify Limit Day Order">
+<doc>Modify Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.812" starttime="20161214 19:03:47.733"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:47.814" starttime="20161214 19:03:47.728"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.815" starttime="20161214 19:03:47.724"></status>
+</test>
+<test id="s1-t72" name="Check Acknowledgement for order: 12">
+<kw library="Sub2Resource" name="acknowledgement for order 109 should be REPLACED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:47.979" starttime="20161214 19:03:47.823"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:47.980" starttime="20161214 19:03:47.821"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:47.982" starttime="20161214 19:03:47.818"></status>
+</test>
+<test id="s1-t73" name="Pre Instance Limit Utilization 12">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:48.014" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :766530
+Pov is :44290
+Throttle is :2
+Turnover is :926250</msg>
+<status status="PASS" endtime="20161214 19:03:48.015" starttime="20161214 19:03:47.988"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.016" starttime="20161214 19:03:47.985"></status>
+</test>
+<test id="s1-t74" name="Pre Token Limit Utilization 12">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:48.165" starttime="20161214 19:03:48.023"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.168" starttime="20161214 19:03:48.020"></status>
+</test>
+<test id="s1-t75" name="Placing Order: 13">
+<kw library="Sub2Resource" name="modify Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>109</arg>
+<arg>HINDALCO</arg>
+<arg>SELL</arg>
+<arg>1</arg>
+<arg>7985</arg>
+</arguments>
+<kw library="Remote" name="Sub Modify Limit Day Order">
+<doc>Modify Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:48.308" starttime="20161214 19:03:48.185"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:48.309" starttime="20161214 19:03:48.178"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.311" starttime="20161214 19:03:48.173"></status>
+</test>
+<test id="s1-t76" name="Check Acknowledgement for order: 13">
+<kw library="Sub2Resource" name="acknowledgement for order 109 should be REPLACED">
+<kw library="Remote" name="Sub Check Status For Order ID">
+<doc>Checking status</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:48.403" starttime="20161214 19:03:48.321"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:48.404" starttime="20161214 19:03:48.318"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.406" starttime="20161214 19:03:48.314"></status>
+</test>
+<test id="s1-t77" name="Pre Instance Limit Utilization 13">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:48.424" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :758545
+Pov is :36305
+Throttle is :0
+Turnover is :918265</msg>
+<status status="PASS" endtime="20161214 19:03:48.425" starttime="20161214 19:03:48.411"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.427" starttime="20161214 19:03:48.409"></status>
+</test>
+<test id="s1-t78" name="Pre Token Limit Utilization 13">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:48.484" starttime="20161214 19:03:48.432"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.485" starttime="20161214 19:03:48.430"></status>
+</test>
+<test id="s1-t79" name="Placing Order: 14">
+<kw library="Sub2Resource" name="modify Limit Day Order">
+<arguments>
+<arg>1</arg>
+<arg>109</arg>
+<arg>HINDALCO</arg>
+<arg>SELL</arg>
+<arg>2</arg>
+<arg>8100</arg>
+</arguments>
+<kw library="Remote" name="Sub Modify Limit Day Order">
+<doc>Modify Limit Day Orders</doc>
+<arguments>
+<arg>${InstanceID}</arg>
+<arg>${OrderID}</arg>
+<arg>${Symbol}</arg>
+<arg>${Side}</arg>
+<arg>${Qty}</arg>
+<arg>${LimitPx}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:48.572" starttime="20161214 19:03:48.494"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:48.573" starttime="20161214 19:03:48.490"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.574" starttime="20161214 19:03:48.487"></status>
+</test>
+<test id="s1-t80" name="Check Acknowledgement for order: 14">
+<kw library="Sub2Resource" name="error code for order 109 and acknowledgement REPLACE_REJECT should be -4006#-5006">
+<kw library="Remote" name="Sub Check Status Error For Order ID">
+<doc>Checking status with RMS Error code</doc>
+<arguments>
+<arg>${orderID}</arg>
+<arg>${ack}</arg>
+<arg>${errorCode}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:48.594" starttime="20161214 19:03:48.582"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:48.596" starttime="20161214 19:03:48.580"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.597" starttime="20161214 19:03:48.577"></status>
+</test>
+<test id="s1-t81" name="Pre Instance Limit Utilization 14">
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:48.625" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :750560
+Pov is :28320
+Throttle is :0
+Turnover is :910280</msg>
+<status status="PASS" endtime="20161214 19:03:48.626" starttime="20161214 19:03:48.604"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.628" starttime="20161214 19:03:48.600"></status>
+</test>
+<test id="s1-t82" name="Pre Token Limit Utilization 14">
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:48.661" starttime="20161214 19:03:48.635"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:48.662" starttime="20161214 19:03:48.632"></status>
+</test>
+<test id="s1-t83" name="Wait for few seconds 1">
+<kw library="BuiltIn" name="Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20161214 19:03:52.671" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20161214 19:03:52.673" starttime="20161214 19:03:48.669"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:52.677" starttime="20161214 19:03:48.666"></status>
+</test>
+<test id="s1-t84" name="Matching Instance Utilized Limits">
+<kw library="Sub2Resource" name="Instance Utilization Type">
+<arguments>
+<arg>Instance ID</arg>
+<arg>Utilized Limit</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:52.698" starttime="20161214 19:03:52.692"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:52.701" starttime="20161214 19:03:52.688"></status>
+</kw>
+<kw library="Remote" name="Get Instance Limit Utilization">
+<doc>Updating Instance Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<msg timestamp="20161214 19:03:52.722" level="INFO">Instance is : 1
+UtlizedMtom is : 1140
+utilizedNetPosition is :750560
+Pov is :28320
+Throttle is :0
+Turnover is :910280</msg>
+<status status="PASS" endtime="20161214 19:03:52.724" starttime="20161214 19:03:52.703"></status>
+</kw>
+<kw library="Remote" name="Match Limit Utilization Net Position">
+<doc>Match Instance Utilization for NetPosition</doc>
+<arguments>
+<arg>1</arg>
+<arg>14240</arg>
+</arguments>
+<msg timestamp="20161214 19:03:52.747" level="FAIL">NetPosition matching fail expected : 14240 but found :28320</msg>
+<status status="FAIL" endtime="20161214 19:03:52.748" starttime="20161214 19:03:52.727"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:03:52.750" starttime="20161214 19:03:52.683">NetPosition matching fail expected : 14240 but found :28320</status>
+</test>
+<test id="s1-t85" name="Wait for few seconds 2">
+<kw library="BuiltIn" name="Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20161214 19:03:57.766" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161214 19:03:57.767" starttime="20161214 19:03:52.762"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:57.770" starttime="20161214 19:03:52.757"></status>
+</test>
+<test id="s1-t86" name="Matching Token Utilized Limits">
+<kw library="Sub2Resource" name="Token Utilization Type">
+<arguments>
+<arg>Instance ID</arg>
+<arg>Token</arg>
+<arg>Utilized Limit</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:57.782" starttime="20161214 19:03:57.779"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:57.784" starttime="20161214 19:03:57.776"></status>
+</kw>
+<kw library="Remote" name="Get Token Limit Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>false</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:57.825" starttime="20161214 19:03:57.785"></status>
+</kw>
+<kw library="Remote" name="Match Token Gross Exposure Utilization">
+<doc>Updating Token Limit Utilization</doc>
+<arguments>
+<arg>1</arg>
+<arg>11868</arg>
+<arg>21490</arg>
+</arguments>
+<msg timestamp="20161214 19:03:57.842" level="FAIL">Gross Exposure matching fail expected : 21490.0 but found :14380.0</msg>
+<status status="FAIL" endtime="20161214 19:03:57.843" starttime="20161214 19:03:57.826"></status>
+</kw>
+<status status="FAIL" critical="yes" endtime="20161214 19:03:57.845" starttime="20161214 19:03:57.773">Gross Exposure matching fail expected : 21490.0 but found :14380.0</status>
+</test>
+<test id="s1-t87" name="Cancelling all open orders">
+<kw library="Sub2Resource" name="Cancel All Open Orders">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw library="Remote" name="Sub Cancel All Open Orders">
+<doc>Cancel All Open Orders</doc>
+<arguments>
+<arg>${instanceID}</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:03:58.420" starttime="20161214 19:03:57.855"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:58.422" starttime="20161214 19:03:57.853"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:58.424" starttime="20161214 19:03:57.850"></status>
+</test>
+<test id="s1-t88" name="Cancelling Remaining Counter Orders">
+<kw library="CounterOrderResource" name="Cancel Remaining Counter Orders">
+<kw library="r2Clients.R2Client" name="Cancel Remaining Orders">
+<status status="PASS" endtime="20161214 19:03:59.049" starttime="20161214 19:03:58.437"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:03:59.050" starttime="20161214 19:03:58.434"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:03:59.051" starttime="20161214 19:03:58.430"></status>
+</test>
+<test id="s1-t89" name="counter order server shutdown">
+<kw library="CounterOrderResource" name="stop connector">
+<kw library="r2Clients.R2Client" name="OrderConnector Logout">
+<status status="PASS" endtime="20161214 19:04:19.063" starttime="20161214 19:03:59.058"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:04:19.066" starttime="20161214 19:03:59.057"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:04:19.068" starttime="20161214 19:03:59.054"></status>
+</test>
+<test id="s1-t90" name="OrderDealer Logout">
+<kw library="Sub2Resource" name="OrderDealer Logout">
+<kw library="Remote" name="Sub Dealer Logout">
+<doc>Logging out of the sub2 system</doc>
+<status status="PASS" endtime="20161214 19:04:19.133" starttime="20161214 19:04:19.077"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:04:19.135" starttime="20161214 19:04:19.074"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:04:19.137" starttime="20161214 19:04:19.071"></status>
+</test>
+<test id="s1-t91" name="Admin Logout">
+<kw library="Sub2Resource" name="Admin Logout">
+<kw library="Remote" name="Sub Admin Logout">
+<doc>Logging out of the sub2 system</doc>
+<status status="PASS" endtime="20161214 19:04:19.178" starttime="20161214 19:04:19.146"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:04:19.180" starttime="20161214 19:04:19.144"></status>
+</kw>
+<status status="PASS" critical="yes" endtime="20161214 19:04:19.181" starttime="20161214 19:04:19.140"></status>
+</test>
+<kw type="teardown" library="Sub2Resource" name="Stop System">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Starting system teardown ...</arg>
+</arguments>
+<status status="PASS" endtime="20161214 19:04:19.261" starttime="20161214 19:04:19.257"></status>
+</kw>
+<kw library="Remote" name="Sub Stop Admin Connection">
+<doc>Disconnecting with the Sub2 system and system tear down</doc>
+<status status="PASS" endtime="20161214 19:04:19.274" starttime="20161214 19:04:19.263"></status>
+</kw>
+<kw library="Remote" name="Sub Stop Dealer Connection">
+<doc>Disconnecting with the Sub2 system and tear down</doc>
+<status status="PASS" endtime="20161214 19:04:19.286" starttime="20161214 19:04:19.276"></status>
+</kw>
+<status status="PASS" endtime="20161214 19:04:19.288" starttime="20161214 19:04:19.255"></status>
+</kw>
+<status status="FAIL" endtime="20161214 19:04:19.288" starttime="20161214 19:00:50.782"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="76" fail="15">Critical Tests</stat>
+<stat pass="76" fail="15">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="76" id="s1" fail="15" name="Test.Robot">Test.Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
